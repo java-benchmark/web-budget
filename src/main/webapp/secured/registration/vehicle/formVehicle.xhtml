@@ -34,8 +34,7 @@
     </ui:define>
 
     <ui:define name="pageDescription">
-        <h:outputText rendered="#{vehicleBean.viewState.adding}"
-                      value="#{messages['vehicle.page-description-adding']}"/>
+        <h:outputText value="#{param['viewState']} Vehicle #{param['adding']}" escape="false"/>
         <o:outputFormat id="pageDescription"
                         rendered="#{vehicleBean.viewState.editing}"
                         value="#{messages['vehicle.page-description-editing']}">

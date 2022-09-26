@@ -74,6 +74,7 @@ public final class NavigationManager {
         }
 
         builder.append(Parameter.of("viewState", pageType.getViewState()));
+        builder.append(Parameter.of("adding", "data"));
 
         return builder.toString();
     }
